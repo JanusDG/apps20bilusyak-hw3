@@ -1,6 +1,8 @@
 package ua.edu.ucu;
 
 
+import java.util.Arrays;
+
 class Student {
 
     private double GPA;
@@ -36,4 +38,12 @@ class Student {
         return "Student{name=" + name + ", surname=" + surname + ", " + "GPA=" + GPA + ", year=" + year + '}';
     }
 
+    @Override
+    public boolean equals(Object other){
+        if (!(other instanceof Student)){return false;}
+        Object[] st1 = {this.getName(), this.getSurname(), this.getGPA(), this.getYear()};
+        Object[] st2 = {((Student)other).getName(), ((Student)other).getSurname(), ((Student)other).getGPA(), ((Student)other).getYear()};
+        return (Arrays.equals(st1, st2));
+
+    }
 }
