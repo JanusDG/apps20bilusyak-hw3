@@ -17,7 +17,6 @@ public class MapDecorator extends SmartArrayDecorator{
 
     public MapDecorator(SmartArray smartArray, MyFunction function){
         super(smartArray);
-        this.function = function;
 
         Object[] arr = this.smartArray.toArray();
         int i = 0;
