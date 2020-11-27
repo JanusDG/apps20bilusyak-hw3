@@ -8,11 +8,11 @@ public class DistinctDecorator extends SmartArrayDecorator {
 
         Object[] arr = this.smartArray.toArray();
         int i = 0;
-        for (; i< arr.length; i++) {
-            for(int j = i + 1; j < arr.length; j++) {
+        for (; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 Object dObj1 = arr[i];
                 Object dObj2 = arr[j];
-                if (dObj1 == null || dObj2== null){continue; }
+                if (dObj1 == null || dObj2 == null){continue; }
                 if (dObj1.equals(dObj2)) {
                     arr[j] = null;
                 }
