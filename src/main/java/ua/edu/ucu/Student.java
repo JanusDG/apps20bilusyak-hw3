@@ -44,6 +44,10 @@ class Student {
         Object[] st1 = {this.getName(), this.getSurname(), this.getGPA(), this.getYear()};
         Object[] st2 = {((Student)other).getName(), ((Student)other).getSurname(), ((Student)other).getGPA(), ((Student)other).getYear()};
         return (Arrays.equals(st1, st2));
+    }
 
+    public int hashCode(){
+        assert false;
+        return 42;
     }
 }

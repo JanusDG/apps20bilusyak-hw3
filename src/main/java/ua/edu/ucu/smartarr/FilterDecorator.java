@@ -4,7 +4,6 @@ import ua.edu.ucu.functions.MyPredicate;
 
 // Tests every element and removes it if it doesn't satisfy MyPredicate
 public class FilterDecorator extends SmartArrayDecorator{
-    private MyPredicate predicat;
 
     public FilterDecorator(SmartArray smartArray) {
         super(smartArray);
@@ -17,7 +16,6 @@ public class FilterDecorator extends SmartArrayDecorator{
 
     public FilterDecorator(SmartArray smartArray, MyPredicate predicat){
         super(smartArray);
-        this.predicat = predicat;
 
         Object[] arr = this.smartArray.toArray();
         int i = 0;

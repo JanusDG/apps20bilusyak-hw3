@@ -6,12 +6,12 @@ public class BaseArray implements SmartArray{
     private final Object[] array;
 
     public BaseArray(Object[] numbers){
-        this.array = numbers;
+        this.array = numbers.clone();
     }
 
     @Override
     public Object[] toArray() {
-        return this.array;
+        return this.array.clone();
     }
 
     @Override
