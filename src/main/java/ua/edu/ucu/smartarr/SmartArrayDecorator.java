@@ -11,8 +11,8 @@ abstract class SmartArrayDecorator implements SmartArray {
     public Object[] toArray() {
         Object[] arr = this.smartArray.toArray();
         int i = 0;
-        for (Object obj: arr){
-            if (obj != null){
+        for (Object obj: arr) {
+            if (obj != null) {
                 i ++;
             }
         }
@@ -24,7 +24,7 @@ abstract class SmartArrayDecorator implements SmartArray {
                 newArr[j] = arr[i];
                 j++;
             }
-            i ++;
+            i++;
         }
         return newArr;
     }

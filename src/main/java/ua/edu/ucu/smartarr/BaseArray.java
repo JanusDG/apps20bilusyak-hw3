@@ -1,11 +1,11 @@
 package ua.edu.ucu.smartarr;
 
 // Base array for decorators
-public class BaseArray implements SmartArray{
+public class BaseArray implements SmartArray {
 
     private final Object[] array;
 
-    public BaseArray(Object[] numbers){
+    public BaseArray(Object[] numbers) {
         this.array = numbers.clone();
     }
 
